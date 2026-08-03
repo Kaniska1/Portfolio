@@ -18,8 +18,8 @@ export default function Page() {
       <main className="relative">
         <Hero />
         <About />
-        <Skills />
         <TechStack />
+        <Skills />
         <Projects />
         <Education />
         <Achievements />

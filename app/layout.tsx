@@ -17,7 +17,7 @@ const plexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Kaniska Mitra — Software Developer Portfolio',
+  title: 'Kaniska Mitra — Portfolio',
   description:
     'Portfolio of Kaniska Mitra, a Computer Science Engineering student, software developer, hackathon finalist, designer, and public speaker.',
   }

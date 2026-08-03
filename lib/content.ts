@@ -8,7 +8,7 @@ export const profile = {
   available: true,
   heroPhoto: '/profile.jpeg',
   aboutPhoto: '/coder.jpeg',
-  resume: '/Kaniska-Mitra-Resume.pdf',
+  resume: 'https://drive.google.com/file/d/1b7azrwIos4yuk2WGhYqLem00lZNjLZvR/view?usp=sharing',
   intro:
     'I build ambitious web products at the intersection of thoughtful design, strong engineering, and genuinely useful ideas. I enjoy hackathons, problem solving, product storytelling, and turning rough concepts into polished experiences.',
   typing: [
