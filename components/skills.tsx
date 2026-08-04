@@ -11,7 +11,7 @@ const icons = [TerminalSquare, Code2, Palette, Speech]
 export function Skills() {
   return (
     <section id="skills" className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <SectionHeading index="02" eyebrow="What I bring" title="Skills" />
+      <SectionHeading index="03" eyebrow="What I bring" title="Skills" />
       <div className="grid gap-5 md:grid-cols-2">
         {skills.map((skill, index) => {
           const Icon = icons[index]
@@ -19,7 +19,7 @@ export function Skills() {
             <Reveal key={skill.title} delay={(index % 2) * 0.08}>
               <motion.article
                 whileHover={{ y: -6 }}
-                className="group relative min-h-64 overflow-hidden rounded-3xl border border-white/10 bg-card/60 p-7 backdrop-blur transition-colors hover:border-primary/40"
+                className="group relative min-h-64 overflow-hidden rounded-3xl border border-white/10 bg-card/80 p-7 backdrop-blur transition-colors hover:border-primary"
               >
                 <div className="absolute -right-8 -top-8 font-mono text-8xl font-semibold text-white/[0.025] transition-colors group-hover:text-primary/[0.06]">
                   {skill.code}

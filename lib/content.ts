@@ -10,12 +10,12 @@ export const profile = {
   aboutPhoto: '/coder.jpeg',
   resume: 'https://drive.google.com/file/d/1b7azrwIos4yuk2WGhYqLem00lZNjLZvR/view?usp=sharing',
   intro:
-    'I build ambitious web products at the intersection of thoughtful design, strong engineering, and genuinely useful ideas. I enjoy hackathons, problem solving, product storytelling, and turning rough concepts into polished experiences.',
+    'I build modern full-stack applications with clean architecture, intuitive user experiences, and scalable backend systems. Passionate about problem solving and continuous learning, I enjoy transforming ideas into polished software.',
   typing: [
+    'Computer Science Undergrad Student',
     'Aspiring Software Developer',
-    'Hackathon Finalist',
-    'Full Stack Developer',
-    'Problem Solver',
+    'Hack4Bengal 4.0 Winner',
+    'AI, ML and Web 3 Enthusiast',
   ],
   socials: {
     github: 'https://github.com/Kaniska1',
@@ -27,8 +27,8 @@ export const profile = {
 export const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Stack', href: '#stack' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Education', href: '#education' },
   { label: 'Achievements', href: '#achievements' },
@@ -37,9 +37,9 @@ export const navItems = [
 
 export const stats = [
   { value: '4×', label: 'Hackathon Finalist' },
-  { value: '1x', label: 'Hackathon winner' },
+  { value: '1×', label: 'MLH Hackathon winner' },
   { value: '100+', label: 'LeetCode Problems' },
-  { value: '4', label: 'Core Skill Domains' },
+  
 ]
 
 export const skills = [
@@ -74,24 +74,33 @@ export const skills = [
 ]
 
 export const techStack = [
-  { name: 'Python', group: 'Language', note: 'Automation, data work, and AI integrations' },
-  { name: 'Java', group: 'Language', note: 'Competitive programming and core CS' },
-  { name: 'C', group: 'Language', note: 'Programming fundamentals and systems coursework' },
-  { name: 'Next.js', group: 'Frontend', note: 'App Router and full-stack product development' },
-  { name: 'React', group: 'Frontend', note: 'Reusable component systems and stateful interfaces' },
-  { name: 'JavaScript', group: 'Language', note: 'Modern ES syntax across frontend and backend' },
-  { name: 'TypeScript', group: 'Language', note: 'Typed application development' },
-  { name: 'Tailwind CSS', group: 'Frontend', note: 'Responsive, scalable interface styling' },
-  { name: 'HTML', group: 'Frontend', note: 'Markup language for web development' },
-  { name: 'CSS', group: 'Frontend', note: 'Style sheets for web development' },
-  { name: 'Node.js', group: 'Backend', note: 'Server-side logic, tooling, and APIs' },
-  { name: 'Express.js', group: 'Backend', note: 'REST APIs, middleware, and authentication' },
-  { name: 'MongoDB', group: 'Database', note: 'Document modelling with Mongoose' },
-  { name: 'MySQL', group: 'Database', note: 'Relational database management' },
-  { name: 'Photoshop', group: 'Design', note: 'Image editing and graphic design' },
-  { name: 'Pandas', group: 'Data', note: 'Data manipulation and analysis' },
-  { name: 'NumPy', group: 'Data', note: 'Numerical computing foundations' },
-  { name: 'Postman', group: 'Tools', note: 'API testing and debugging' },
+  { name: "Python", icon: "devicon-python-plain", group: "Language", note: "Automation, data work, and AI integrations" },
+  { name: "Java", icon: "devicon-java-plain", group: "Language", note: "Competitive programming and core CS" },
+  { name: "C", icon: "devicon-c-plain", group: "Language", note: "Programming fundamentals and systems coursework" },
+  { name: "JavaScript", icon: "devicon-javascript-plain", group: "Language", note: "Modern ES syntax" },
+  { name: "TypeScript", icon: "devicon-typescript-plain", group: "Language", note: "Typed application development" },
+
+  { name: "Next.js", icon: "devicon-nextjs-plain", group: "Frontend", note: "App Router and full-stack apps" },
+  { name: "React", icon: "devicon-react-original", group: "Frontend", note: "Reusable component systems" },
+  { name: "Tailwind CSS", icon: "devicon-tailwindcss-original", group: "Frontend", note: "Utility-first styling" },
+
+  { name: "Node.js", icon: "devicon-nodejs-plain", group: "Backend", note: "Server-side APIs" },
+  { name: "Express.js", icon: "devicon-express-original", group: "Backend", note: "REST APIs" },
+
+  { name: "MongoDB", icon: "devicon-mongodb-plain", group: "Database", note: "Document database" },
+  { name: "MySQL", icon: "devicon-mysql-plain", group: "Database", note: "Relational database" },
+
+  { name: "HTML5", icon: "devicon-html5-plain", group: "Frontend", note: "Semantic markup" },
+  { name: "CSS3", icon: "devicon-css3-plain", group: "Frontend", note: "Responsive styling" },
+
+
+  { name: "Pandas", icon: "devicon-pandas-plain", group: "Data", note: "Data analysis" },
+  { name: "NumPy", icon: "devicon-numpy-plain", group: "Data", note: "Scientific computing" },
+
+  { name: "Photoshop", icon: "devicon-photoshop-plain", group: "Design", note: "Graphic design" },
+  { name: "GitHub", icon: "devicon-github-original", group: "Tools", note: "Collaboration" },
+  { name: "Postman", icon: "devicon-postman-plain", group: "Tools", note: "API testing" },
+  { name: "Arduino", icon: "devicon-arduino-plain", group: "Tools", note: "Embedded systems" },
 ]
 
 export type Project = {

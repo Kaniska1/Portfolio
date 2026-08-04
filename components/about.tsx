@@ -47,7 +47,7 @@ export function About() {
             </p>
           </Reveal>
 
-          <div className="mt-10 grid grid-cols-2 gap-4">
+          <div className="mt-10 grid grid-cols-3 gap-4">
             {stats.map((stat, index) => (
               <Reveal key={stat.label} delay={0.06 * index}>
                 <motion.div
