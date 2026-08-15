@@ -8,7 +8,7 @@ export const profile = {
   available: true,
   heroPhoto: '/profile.jpeg',
   aboutPhoto: '/coder.jpeg',
-  resume: 'https://drive.google.com/file/d/1b7azrwIos4yuk2WGhYqLem00lZNjLZvR/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/1JCsMRogvavbgIZzypPJV-LNLlt5GpEoz/view?usp=sharing',
   intro:
     'I build modern full-stack applications with clean architecture, intuitive user experiences, and scalable backend systems. Passionate about problem solving and continuous learning, I enjoy transforming ideas into polished software.',
   typing: [
@@ -144,6 +144,16 @@ export const projects: Project[] = [
     github: 'https://github.com/Kaniska1/Stockify',
     accent: 'ST',
     status: 'Full stack',
+  },
+  {
+    name: 'Memento',
+    tagline: 'Movie Recommendation & Logging',
+    description:
+      'A machine learning-powered movie recommendation system that provides personalized suggestions based on user preferences and viewing history.',
+    tech: ['Next.js', 'Python', 'Scikit-learn', 'Pandas', 'Tailwind CSS'],
+    github: 'https://github.com/Kaniska1/memento',
+    accent: 'ME',
+    status: 'ML project',
   },
   {
     name: 'Coordina',

@@ -115,8 +115,8 @@ export function Projects() {
 
       <div className="grid gap-5 md:grid-cols-2">
         {projects.map((p, i) => (
-          <Reveal key={p.name} delay={(i % 2) * 0.08} className={i === 0 ? 'md:col-span-2' : ''}>
-            <ProjectCard project={p} featured={i === 0} />
+          <Reveal key={p.name} delay={(i % 2) * 0.08} className={i === 0 ? 'grid-cols-2' : ''}>
+            <ProjectCard project={p} />
           </Reveal>
         ))}
       </div>
