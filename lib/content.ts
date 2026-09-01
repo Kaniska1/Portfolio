@@ -28,8 +28,8 @@ export const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Stack', href: '#stack' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Education', href: '#education' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Contact', href: '#contact' },
@@ -189,13 +189,15 @@ export const projects: Project[] = [
   
 ]
 
-export const education = [{
-    period: '2021',
-    title: 'Secondary Education (Class 10)',
-    org: 'W.W.A. Cossipore English School, Kolkata',
+export const education = [
+  {
+    period: '2023 — ongoing',
+    title: 'B.Tech in Computer Science & Engineering',
+    org: 'Techno Main Salt Lake, Kolkata',
     detail:
-      'ICSE with 97% aggregate. Coursework included Computer Science Applications as a core subject.',
+      'CGPA: 7.89. Coursework includes Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, Software Engineering, Cryptography, IoT, and AI fundamentals.',
   },
+  
 
   {
     period: '2021 — 2023',
@@ -204,12 +206,13 @@ export const education = [{
     detail:
       'ISC with 94.5% aggregate. Coursework included Computer Science, Physics, Chemistry, and Mathematics.',
   },
+
   {
-    period: '2023 — ongoing',
-    title: 'B.Tech in Computer Science & Engineering',
-    org: 'Techno Main Salt Lake, Kolkata',
+    period: '2021',
+    title: 'Secondary Education (Class 10)',
+    org: 'W.W.A. Cossipore English School, Kolkata',
     detail:
-      'CGPA: 7.89. Coursework includes Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, Software Engineering, Cryptography, IoT, and AI fundamentals.',
+      'ICSE with 97% aggregate. Coursework included Computer Science Applications as a core subject.',
   },
 ]
 

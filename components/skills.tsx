@@ -11,7 +11,7 @@ const icons = [TerminalSquare, Code2, Palette, Speech]
 export function Skills() {
   return (
     <section id="skills" className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <SectionHeading index="03" eyebrow="What I bring" title="Skills" />
+      <SectionHeading index="04" eyebrow="What I bring" title="Skills" />
       <div className="grid gap-5 md:grid-cols-2">
         {skills.map((skill, index) => {
           const Icon = icons[index]

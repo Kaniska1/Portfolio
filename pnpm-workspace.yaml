@@ -7,3 +7,6 @@ packages:
 
 overrides:
   react: 19.1.1
+
+minimumReleaseAgeExclude:
+  - lucide-react@1.39.0

@@ -171,7 +171,7 @@ export function Projects() {
       className="relative mx-auto max-w-7xl px-6 py-24 md:py-32"
     >
       <SectionHeading
-        index="04"
+        index="03"
         eyebrow="Selected work"
         title="Things I've built."
       />

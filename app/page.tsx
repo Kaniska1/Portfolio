@@ -22,8 +22,8 @@ export default function Home() {
           <Hero />
           <About />
           <TechStack />
-          <Skills />
           <Projects />
+          <Skills />
           <Education />
           <Achievements />
           <Contact />

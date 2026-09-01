@@ -12,12 +12,6 @@ import {
 } from 'lucide-react'
 import { profile } from '@/lib/content'
 
-const nodes = [
-  { icon: Code2, label: 'build', className: '-left-5 top-16' },
-  { icon: Database, label: 'data', className: '-right-4 top-28' },
-  { icon: GitBranch, label: 'ship', className: 'left-2 bottom-20' },
-  { icon: Cpu, label: 'think', className: 'right-0 bottom-14' },
-]
 
 type ProfileVisualProps = {
   compact?: boolean
@@ -67,38 +61,6 @@ export function ProfileVisual({
         </div>
       </div>
 
-      {nodes.map((node, index) => (
-        <motion.div
-          key={node.label}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{
-            opacity: 1,
-            scale: 1,
-            y: [0, -8, 0],
-          }}
-          transition={{
-            opacity: {
-              delay: 0.5 + index * 0.1,
-            },
-            scale: {
-              delay: 0.5 + index * 0.1,
-            },
-            y: {
-              duration: 4 + index,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: 'easeInOut',
-            },
-          }}
-          className={`absolute hidden items-center gap-2 rounded-full border border-white/10 bg-card/80 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground shadow-xl backdrop-blur-xl sm:flex ${node.className}`}
-        >
-          <node.icon className="size-3.5 text-primary" />
-          {node.label}
-        </motion.div>
-      ))}
-
-      <div className="absolute -right-5 -top-5 rounded-2xl border border-primary/30 bg-primary/10 p-3 backdrop-blur">
-        <Sparkles className="size-5 text-primary" />
-      </div>
     </div>
   )
 }
