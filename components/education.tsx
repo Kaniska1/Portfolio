@@ -2,10 +2,12 @@
 
 import { useRef } from 'react'
 import { motion, useScroll, useSpring } from 'motion/react'
-import { BookOpen, BrainCircuit, GraduationCap, Network } from 'lucide-react'
+import { BookOpen, BrainCircuit, GraduationCap, Network, Code2, Cpu, Database } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 import { education } from '@/lib/content'
+import { EducationCard } from '@/components/education-card'
+
 
 const subjects = ['DSA', 'DBMS', 'OS', 'Networks', 'Software Engineering', 'IoT', 'AI', 'Cryptography']
 
@@ -37,18 +39,80 @@ export function Education() {
         </div>
 
         <Reveal delay={0.15}>
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-card/60 p-6 backdrop-blur">
-            <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-primary/10 blur-3xl" />
-            <div className="flex items-center gap-3"><div className="flex size-11 items-center justify-center rounded-2xl bg-primary/10 text-primary"><GraduationCap className="size-5" /></div><div><p className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary">CS foundation</p><h3 className="font-semibold">Learning map</h3></div></div>
-            <div className="mt-7 grid grid-cols-2 gap-3">
-              {subjects.map((subject, index) => <div key={subject} className="rounded-xl border border-white/10 bg-white/[0.025] p-3 text-sm text-muted-foreground"><span className="mr-2 font-mono text-[10px] text-primary">0{index + 1}</span>{subject}</div>)}
-            </div>
-            <div className="mt-6 grid grid-cols-3 gap-3 text-center">
-              {[{ icon: BookOpen, label: 'Learn' }, { icon: BrainCircuit, label: 'Build' }, { icon: Network, label: 'Connect' }].map(({ icon: Icon, label }) => <div key={label} className="rounded-xl border border-white/10 p-3"><Icon className="mx-auto size-4 text-primary" /><p className="mt-2 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{label}</p></div>)}
-            </div>
-          </div>
+          <EducationCard />
         </Reveal>
       </div>
     </section>
+  )
+}
+
+function EducationLanyard() {
+  return (
+    <div
+      className="
+        relative
+        hidden
+        h-[600px]
+        w-full
+        lg:block
+      "
+    >
+      {/* subtle red glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-1/2
+          top-1/2
+          h-[360px]
+          w-[360px]
+          -translate-x-1/2
+          -translate-y-1/2
+          rounded-full
+          bg-red-700/[0.08]
+          blur-[100px]
+        "
+      />
+
+      {/* technical label */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-4
+          top-10
+          z-10
+          font-mono
+          text-[9px]
+          uppercase
+          tracking-[0.24em]
+          text-white/20
+        "
+      >
+        Student / Developer ID
+      </div>
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          bottom-12
+          right-2
+          z-10
+          text-right
+          font-mono
+          text-[8px]
+          uppercase
+          leading-5
+          tracking-[0.18em]
+          text-white/20
+        "
+      >
+        Drag to interact
+        <br />
+        Physics enabled
+      </div>
+
+    </div>
   )
 }

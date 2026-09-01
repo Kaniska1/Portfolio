@@ -89,6 +89,11 @@ export const techStack = [
 
   { name: "MongoDB", icon: "devicon-mongodb-plain", group: "Database", note: "Document database" },
   { name: "MySQL", icon: "devicon-mysql-plain", group: "Database", note: "Relational database" },
+  { name: "PostgreSQL", icon: "devicon-postgresql-plain", group: "Database", note: "Relational database" },
+  { name: "Prisma", icon: "devicon-prisma-plain", group: "Database", note: "Database ORM" },
+  { name: "Redis", icon: "devicon-redis-plain", group: "Database", note: "In-memory data structure store" },
+  { name: "Supabase", icon: "devicon-supabase-plain", group: "Database", note: "Backend-as-a-Service" },
+  { name: "Firebase", icon: "devicon-firebase-plain", group: "Tools", note: "Backend-as-a-Service" },
 
   { name: "HTML5", icon: "devicon-html5-plain", group: "Frontend", note: "Semantic markup" },
   { name: "CSS3", icon: "devicon-css3-plain", group: "Frontend", note: "Responsive styling" },
@@ -96,11 +101,16 @@ export const techStack = [
 
   { name: "Pandas", icon: "devicon-pandas-plain", group: "Data", note: "Data analysis" },
   { name: "NumPy", icon: "devicon-numpy-plain", group: "Data", note: "Scientific computing" },
+  { name: "Scikit-learn", icon: "devicon-scikitlearn-plain", group: "Data", note: "Machine learning" },
 
   { name: "Photoshop", icon: "devicon-photoshop-plain", group: "Design", note: "Graphic design" },
+  { name: "Figma", icon: "devicon-figma-plain", group: "Design", note: "UI/UX design" },
+  { name: "Canva", icon: "devicon-canva-plain", group: "Design", note: "Graphic design" },
   { name: "GitHub", icon: "devicon-github-original", group: "Tools", note: "Collaboration" },
   { name: "Postman", icon: "devicon-postman-plain", group: "Tools", note: "API testing" },
   { name: "Arduino", icon: "devicon-arduino-plain", group: "Tools", note: "Embedded systems" },
+  { name: "Docker", icon: "devicon-docker-plain", group: "Tools", note: "Containerization" },
+  { name: "Google Cloud", icon: "devicon-googlecloud-plain", group: "Tools", note: "Cloud computing" },
 ]
 
 export type Project = {

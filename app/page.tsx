@@ -1,31 +1,36 @@
-import { BackgroundDecor } from '@/components/decor'
 import { Navbar } from '@/components/navbar'
 import { Hero } from '@/components/hero'
 import { About } from '@/components/about'
-import { Skills } from '@/components/skills'
 import { TechStack } from '@/components/tech-stack'
+import { Skills } from '@/components/skills'
 import { Projects } from '@/components/projects'
 import { Education } from '@/components/education'
 import { Achievements } from '@/components/achievements'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
+import { DotBackground } from '@/components/dot-background'
 
-export default function Page() {
+export default function Home() {
   return (
     <>
-      <BackgroundDecor />
-      <Navbar />
-      <main className="relative">
-        <Hero />
-        <About />
-        <TechStack />
-        <Skills />
-        <Projects />
-        <Education />
-        <Achievements />
-        <Contact />
+      <DotBackground />
+
+      <div className="relative min-h-screen">
+        <Navbar />
+
+        <main>
+          <Hero />
+          <About />
+          <TechStack />
+          <Skills />
+          <Projects />
+          <Education />
+          <Achievements />
+          <Contact />
+        </main>
+
         <Footer />
-      </main>
+      </div>
     </>
   )
 }
